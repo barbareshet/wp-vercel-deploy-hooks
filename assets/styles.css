@@ -1,0 +1,95 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+#wpadminbar .ab-empty-item .ready-btn {
+  opacity: 1;
+  cursor: pointer !important;
+}
+.running {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.deploying {
+  color: #f5a623;
+}
+
+.success {
+  color: #50e3c2;
+}
+
+.error {
+  color: #ff3333;
+}
+
+.vwd-status-icon {
+  display: inline-block;
+  position: relative;
+}
+
+.notification-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification-modal.hidden {
+  display: none;
+  z-index: -1;
+}
+
+.notification-modal.popup {
+  width: 300px;
+  padding: 15px 10px;
+  top: unset;
+  left: unset;
+}
+
+.notification-modal.popup::after {
+  content: '\f158';
+  cursor: pointer;
+  font: normal 20px / 1 dashicons;
+  position: absolute;
+  z-index: 9999999;
+  color: white;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+.notification-modal.hidden .close-btn {
+  display: none;
+}
+.notification-modal .close-btn {
+  display: inline-block;
+}
+
+.notification-modal.success {
+  background-color: #50e3c2;
+}
+.notification-modal.error {
+  background-color: #ff3333;
+  color: #fff;
+}
