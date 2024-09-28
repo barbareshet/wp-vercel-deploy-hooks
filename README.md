@@ -1,3 +1,6 @@
+# ‼ No longer in active maintenance ‼️
+As I'm no longer working with WordPress, I have very little incentive to keep this plugin alive. If anyone would like to take over this plugin, please feel free to let me know and I'll gladly transfer the repository. Thank you!
+
 # WP Vercel Deploy Hooks
 
 A WordPress plugin to deploy a static site to [Vercel](https://vercel.com/) when you publish a new WordPress post/page, update a WordPress post/page or deploy on command from the WordPress admin menu and admin bar.
